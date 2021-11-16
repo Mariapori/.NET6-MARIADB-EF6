@@ -21,6 +21,7 @@ if(vastaus?.ToUpper() == "B")
     var tietueNimi = Console.ReadLine();
     tietue asd = new tietue();
     asd.Nimi = tietueNimi ?? "";
+    asd.PVM = DateTime.Now;
     db.Tietueet.Add(asd);
     db.SaveChanges();
 }
